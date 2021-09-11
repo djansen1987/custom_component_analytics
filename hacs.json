@@ -1,0 +1,6 @@
+{
+    "name": "HACS Analytics",
+    "render_readme": true,
+    "domains": ["sensor"]
+  }
+  

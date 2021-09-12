@@ -1,0 +1,1 @@
+"""The HACS Analytics Custom Component."""

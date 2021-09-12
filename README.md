@@ -1,17 +1,18 @@
-## Hacs Analytics Component
-This component will create an sensor of the current known installations of your component by Home Assistant's Analytics. 
+## CCA - (Home Assistant) Custom Component Analytics
+This component will create an sensor of the current known installations of the configured component's via Home Assistant's Analytics. 
 More info on how the Analytics are gathered please visit: https://www.home-assistant.io/integrations/analytics/
+
 ## Installation
 
-### HACS - Recommended
+<!-- ### HACS - Recommended
 - Have [HACS](https://hacs.xyz) installed, this will allow you to easily manage and track updates.
-- Search for 'HACS Analytics'.
+- Search for 'custom component analytics'.
 - Click Install below the found integration.
 - Configure using the configuration instructions below.
-- Restart Home-Assistant.
+- Restart Home-Assistant. -->
 
 ### Manual
-- Copy directory `custom_components/hacs_analytics` to your `<config dir>/custom_components` directory.
+- Copy directory `custom_components/custom_component_analytics` to your `<config dir>/custom_components` directory.
 - Configure with config below.
 - Restart Home-Assistant.
 
@@ -20,15 +21,14 @@ To use this component in your installation, add the following to your `configura
 
 ```yaml
 sensor:
-    - platform: hacs_analytics
-    resources:
-        - saj_esolar
-        - hacs
-        - smartthinq_sensors
+    - platform: custom_component_analytics
+      resources:
+          - saj_esolar
+          - custom_component_analytics
 ```
 ## Screenshot
 
-![alt text](https://github.com/djansen1987/hacs_analytics/blob/main/screenshots/Home-Assistant-Sensors-hacs_analytics-1.png?raw=true "Sensors Example")
+![alt text](https://github.com/djansen1987/custom_component_analytics/blob/main/screenshots/Home-Assistant-Sensors-CCA-1.png?raw=true "Sensors Example")
 
 
 ## Debugging
@@ -39,12 +39,8 @@ Add the relevant lines below to the `configuration.yaml`:
 logger:
   default: info
   logs:
-    custom_components.hacs_analytics: debug
+    custom_components.custom_component_analytics: debug
 ```
-## Credits
-
-Credits to @cyberjunky. I got inspired by his source code which helped me a lot to create my first Custom Component.
-https://github.com/cyberjunky/home-assistant-toon_smartmeter/
 
 ## Donation
 

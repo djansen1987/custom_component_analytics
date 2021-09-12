@@ -23,7 +23,7 @@ _LOGGER = logging.getLogger(__name__)
 
 MIN_TIME_BETWEEN_UPDATES = timedelta(minutes=60)
 
-SENSOR_PREFIX = 'custom_component_analytics_'
+SENSOR_PREFIX = 'CCA_'
 
 SENSOR_TYPE_LIST = {
     "total",
